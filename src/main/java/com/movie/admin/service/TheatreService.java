@@ -24,7 +24,7 @@ public class TheatreService implements ITheatresService {
 		Theatres theatre =new Theatres();
 		theatre.setLocation(theatredto.getLocation());
 		theatre.setSeatingCapacity(theatredto.getSeatingCapacity());
-		theatre.setTheatreName(theatredto.getLocation());
+		theatre.setTheatreName(theatredto.getTheatreName());
 		theatre.setTicketPrice(theatredto.getTicketPrice());
 		return theatreRepo.save(theatre);
 	}
